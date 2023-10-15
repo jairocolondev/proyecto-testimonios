@@ -4,7 +4,11 @@ import './Testimonio.css';
 function Testimonio() {
   return (
     <div className='container-testimonio'>
-      <img className='image-testimonio' src={img1} alt='Foto de Pablo' />
+      <img
+        className='image-testimonio'
+        src={img1}
+        alt='Foto de Pablo Cervantes'
+      />
       <div className='container-text-testimonio'>
         <h2 className='name-testimonio'>Pablo Cervantes</h2>
         <h3 className='profesion-testimonio'>

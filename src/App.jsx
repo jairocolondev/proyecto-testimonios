@@ -1,10 +1,14 @@
 import { Testimonio } from './components/Testimonio/Testimonio';
+import './App.css';
 
 function App() {
   return (
-    <>
-      <Testimonio />
-    </>
+    <div className='App'>
+      <div className='container-general'>
+        <h1>Testimonios</h1>
+        <Testimonio />
+      </div>
+    </div>
   );
 }
 
