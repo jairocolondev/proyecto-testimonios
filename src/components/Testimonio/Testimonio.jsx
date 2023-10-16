@@ -1,26 +1,21 @@
-import img1 from '../../assets/imagenes/testimonio-01.jpg';
+import PropTypes from 'prop-types';
+import imagesMap from './imagesMap';
 import './Testimonio.css';
-
-function Testimonio() {
+function Testimonio(props) {
   return (
     <div className='container-testimonio'>
       <img
         className='image-testimonio'
-        src={img1}
-        alt='Foto de Pablo Cervantes'
+        src={imagesMap[props.imageName]}
+        alt={`Foto de ${props.name}`}
       />
+
       <div className='container-text-testimonio'>
-        <h2 className='name-testimonio'>Pablo Cervantes</h2>
+        <h2 className='name-testimonio'>{props.name}</h2>
         <h3 className='profesion-testimonio'>
-          <strong>Profesión:</strong> Diseñador Web
+          <strong>Profesión:</strong> {props.profesion}
         </h3>
-        <p className='text-testimonio'>
-          Lorem ipsum do lor sit amet consectetur adipisicing elit. Quisquam
-          voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus
-          vel quas quibusdam doloribus doloremque. Quisquam voluptatibus, quia,
-          quidem, voluptatum dolores voluptas repellendus vel quas quibusdam
-          doloribus doloremque.
-        </p>
+        <p className='text-testimonio'>{props.testimonio}</p>
         {/* <div className='container-link-perfil'>
           <a className='link-perfil' href='#'>
             Link al perfil
@@ -30,5 +25,12 @@ function Testimonio() {
     </div>
   );
 }
+
+Testimonio.propTypes = {
+  imageName: PropTypes.object.isRequired,
+  name: PropTypes.string.isRequired,
+  profesion: PropTypes.string.isRequired,
+  testimonio: PropTypes.string.isRequired,
+};
 
 export { Testimonio };
