@@ -4,7 +4,7 @@
   align-items: center;
   margin: 4rem auto 0;
   width: 90%;
-  max-width: 1350px;
+  max-width: 1200px;
   height: auto;
   min-height: auto;
   background: #ffffff;
@@ -30,7 +30,7 @@
   align-items: center;
   width: 100%;
   height: 100%;
-  padding: 1rem;
+  padding: 2rem;
 }
 
 .name-testimonio {
@@ -99,9 +99,9 @@
 
 /*---------------============= Medias Queries =============---------------*/
 @media (width < 1024px) {
-  .container-text-testimonio {
-    padding: 10px;
-  }
+  /* .container-text-testimonio {
+    padding: 1rem;
+  } */
 
   .name-testimonio {
     font-size: 1.75rem;
@@ -140,7 +140,6 @@
   .container-text-testimonio {
     width: 100%;
     height: 80%;
-    padding: 1rem;
     justify-content: flex-start;
   }
 

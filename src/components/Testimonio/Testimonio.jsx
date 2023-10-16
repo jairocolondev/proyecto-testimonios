@@ -21,11 +21,11 @@ function Testimonio() {
           quidem, voluptatum dolores voluptas repellendus vel quas quibusdam
           doloribus doloremque.
         </p>
-        <div className='container-link-perfil'>
+        {/* <div className='container-link-perfil'>
           <a className='link-perfil' href='#'>
             Link al perfil
           </a>
-        </div>
+        </div> */}
       </div>
     </div>
   );
