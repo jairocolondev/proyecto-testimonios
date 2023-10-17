@@ -27,13 +27,13 @@ const testimoniosData = [
     testimonio:
       'Lorem ipsum do lor sit amet consectetur adipisicing elit. Quisquam voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus vel quas quibusdam doloribus doloremque. Quisquam voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus vel quas quibusdam doloribus doloremque.',
   },
-  {
-    imageName: 'testimonio-05',
-    name: 'María Angarita',
-    profesion: 'Community Manager',
-    testimonio:
-      'Lorem ipsum do lor sit amet consectetur adipisicing elit. Quisquam voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus vel quas quibusdam doloribus doloremque. Quisquam voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus vel quas quibusdam doloribus doloremque.',
-  },
+  // {
+  //   imageName: 'testimonio-05',
+  //   name: 'María Angarita',
+  //   profesion: 'Community Manager',
+  //   testimonio:
+  //     'Lorem ipsum do lor sit amet consectetur adipisicing elit. Quisquam voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus vel quas quibusdam doloribus doloremque. Quisquam voluptatibus, quia, quidem, voluptatum dolores voluptas repellendus vel quas quibusdam doloribus doloremque.',
+  // },
   {
     imageName: 'testimonio-06',
     name: 'Frank Putenver',
