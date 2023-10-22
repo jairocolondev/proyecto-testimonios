@@ -1,22 +1,17 @@
 const express = require('express');
+const routerApi = require('./routes/index');
+
 const app = express();
 const port = 3000;
+
+app.use(express.json());
 
 app.get('/', (req, res) => {
   res.send('Hola, este es mi primer servidor de Backend :)');
 });
 
-app.get('/nuevo-endpoint', (req, res) => {
-  res.send('Hola, soy un nuevo endpoint!');
-});
-
-app.get('/producto', (req, res) => {
-  res.json({
-    name: 'Producto 1',
-    price: 1000,
-  });
-});
+routerApi(app);
 
 app.listen(port, () => {
-  console.log('Run Server', +port);
+  console.log('Server On', +port);
 });
