@@ -10,4 +10,4 @@ function routerApi(app) {
   router.use('/categories', categoriesRouter);
 }
 
-module.exports = routerApi;
+module.exports = routerApi; 
