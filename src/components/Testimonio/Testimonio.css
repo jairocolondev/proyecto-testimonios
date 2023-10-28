@@ -1,0 +1,149 @@
+.container-testimonio {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 4rem auto 0;
+  width: 90%;
+  max-width: 1100px;
+  height: auto;
+  min-height: auto;
+  background: #ffffff;
+  box-shadow:
+    0 4px 8px rgba(0, 0, 0, 0.1),
+    0 2px 4px rgba(0, 0, 0, 0.06);
+  border-radius: 20px;
+}
+
+.image-testimonio {
+  width: 40%;
+  height: 100%;
+  min-height: 300px;
+  max-height: 250px;
+  object-fit: cover;
+  border-radius: 20px 0 0 20px;
+}
+
+.container-text-testimonio {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 2rem;
+}
+
+.name-testimonio {
+  font-size: 2.5rem;
+  font-weight: 600;
+  color: #4b4b4b;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.profesion-testimonio {
+  font-size: 1.2rem;
+  margin-top: -2px;
+  font-weight: 500;
+  color: #4b4b4b;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.text-testimonio {
+  font-size: 0.95rem;
+  margin-top: 16px;
+  font-weight: 500;
+  color: #4b4b4b;
+  text-align: justify;
+}
+
+.container-link-perfil {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: auto;
+}
+
+.link-perfil {
+  font-size: 0.85rem;
+  margin-top: 16px;
+  font-weight: 500;
+  color: #220270;
+  text-align: center;
+  text-decoration: none;
+  transition: all 0.3s ease-in-out;
+  border-bottom: 1px solid #220270;
+  padding-bottom: 3px;
+}
+
+.link-perfil::after {
+  content: '';
+  background-image: url(https://cdn-icons-png.flaticon.com/512/758/758778.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 8px;
+}
+
+.link-perfil:hover {
+  color: #4b4b4b;
+  font-weight: 600;
+  transform: scale(1.1);
+  border-bottom: none;
+}
+
+/*---------------============= Medias Queries =============---------------*/
+@media (width < 1024px) {
+  /* .container-text-testimonio {
+    padding: 1rem;
+  } */
+
+  .name-testimonio {
+    font-size: 1.75rem;
+    margin-top: 5px;
+  }
+
+  .profesion-testimonio {
+    font-size: 1rem;
+  }
+
+  .text-testimonio {
+    font-size: 0.85rem;
+    margin-top: 10px;
+  }
+
+  .container-link-perfil {
+    margin: 16px auto 0px;
+  }
+}
+
+@media (width < 768px) {
+  .container-testimonio {
+    flex-direction: column;
+    width: 90%;
+    max-width: 400px;
+    height: auto;
+    margin-bottom: 16px;
+  }
+
+  .image-testimonio {
+    width: 100%;
+    height: 20%;
+    border-radius: 20px 20px 0 0;
+  }
+
+  .container-text-testimonio {
+    width: 100%;
+    height: 80%;
+    justify-content: flex-start;
+  }
+
+  .container-link-perfil {
+    margin: 16px auto 12px;
+  }
+}

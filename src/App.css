@@ -1,42 +1,100 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+}
+
+html,
+body {
+  font-size: 18px;
+  background: #f5f6f7;
+}
+
+/* Estilos generales para la scrollbar */
+::-webkit-scrollbar {
+  width: 8px; /* Ancho de la barra de desplazamiento vertical */
+  height: 8px; /* Altura de la barra de desplazamiento horizontal */
+}
+
+/* Estilo del pulgar (la parte móvil) de la scrollbar */
+::-webkit-scrollbar-thumb {
+  background: #888; /* Color de fondo del pulgar */
+  border-radius: 6px; /* Bordes redondeados del pulgar */
+  transition: background 0.3s; /* Efecto de transición al pasar el mouse */
+}
+
+/* Efecto hover en el pulgar */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Cambia el color al pasar el mouse por encima */
+}
+
+/* Estilo del track (la parte fija) de la scrollbar */
+::-webkit-scrollbar-track {
+  background: #f1f1f1; /* Color de fondo del track */
+  border-radius: 6px; /* Bordes redondeados del track */
+}
+
+/* Estilo del botón de la scrollbar (arriba/abajo, izquierda/derecha) */
+::-webkit-scrollbar-button {
+  display: none; /* Oculta los botones por defecto */
+}
+
+/* Cambiar la scrollbar para Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #888 #f1f1f1;
+}
+
+.App {
+  max-width: 1350px;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin: 5rem auto;
   text-align: center;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+.container-general {
+  min-height: 600px;
+  max-width: 1350px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  flex-direction: column;
+  text-align: center;
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+h1 {
+  font-family: 'Nunito', sans-serif;
+  max-width: 940px;
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #333;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  line-height: 1.1;
+}
+
+h1:after {
+  content: '';
+  display: block;
+  width: 8rem;
+  height: 0.25rem;
+  background: #777;
+  border-radius: 20px;
+  margin: 5px auto 0;
+}
+
+/*---------------============= Medias Queries =============---------------*/
+@media (width < 768px) {
+  h1 {
+    font-size: 2rem;
+    margin: 4rem auto 0;
   }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
 }
