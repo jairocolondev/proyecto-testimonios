@@ -13,7 +13,16 @@ const port = 3000;
 app.use(express.json());
 
 const whitelist = ['http://localhost:5173/', 'https://jairocolon.com'];
-app.use(cors(whitelist));
+const options = {
+  origin: (origin, callback) => {
+    if (whitelist.includes(origin) || !origin) {
+      callback(null, true);
+    } else {
+      callback(new Error('No permitido'));
+    }
+  },
+}
+app.use(cors(options));
 
 app.get('/', (req, res) => {
   res.send('Hola, este es mi primer servidor de Backend :)');

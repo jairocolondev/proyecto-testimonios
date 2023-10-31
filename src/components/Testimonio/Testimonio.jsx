@@ -1,16 +1,16 @@
-import { useState, useEffect } from 'react';
+// import { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
 import imagesMap from './imagesMap';
 import './Testimonio.css';
 function Testimonio(props) {
-  const [data, setData] = useState([]);
+  // const [data, setData] = useState([]);
 
-  useEffect(() => {
-    fetch('http://localhost:3000/api/v1/products')
-      .then(response => response.json())
-      .then(data => setData(data));
-  }, []);
-  console.log(data);
+  // useEffect(() => {
+  //   fetch('http://localhost:3000/api/v1/products')
+  //     .then(response => response.json())
+  //     .then(data => setData(data));
+  // }, []);
+  // console.log(data);
 
   return (
     <div className='container-testimonio'>
